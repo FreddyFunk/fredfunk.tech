@@ -1,0 +1,122 @@
+From: [Frederic Laing] <laing.frederic@gmail.com>
+To: Canonical Ltd.
+Subject: [PATCH RFC 1/1] canonical: application for Linux kernel developer
+Date: Thu Sep 9 20:54:33 2024 +0200
+
+    Add new member to the canonical/kernel_team module which results in
+    accelerated Linux kernel patching for Ubuntu.
+    Please apply this patch to linux-next.
+    Requisition ID: 1A120
+
+Frederic Laing (1):
+  canonical: add handsome kernel dev team member
+  people/frederic_laing: update current position and job history
+
+world/best_companies/canonical/kernel_team/developers.h | 5 +
+world/people/frederic_laing/job.rs              | 1 +
+2 files changed, 6 insertions(+), 0 deletions(-)
+
+---
+
+Dear Linux kernel development team maintainer,
+
+I would like to kindly request for comment on my application as a junior
+Linux kernel developer at Canonical.
+
+I am a tinkerer at heart with a passion for the most challenging technical
+problems. Known as a driving force and quick learner in my professional
+work environments, I am not afraid to ask for help or admit mistakes. One
+of my favorite things at work is receiving honest and constructive
+feedback, which I gratefully take as an opportunity to grow my engineering
+expertise.
+
+I have demonstrated great skills in writing high-performance C++ code,
+efficient GPU compute/fragment shaders, and memory management
+optimizations during my employment at KISTERS AG and FH Aachen - Aachen
+University of Applied Sciences. At Zurich Insurance, I focused on
+containerization, infrastructure cost optimizations, DevOps automation, and
+Site Reliability Engineering. I also successfully lead and finished a
+large multi-million budget IT project with 80+ members for over a year at
+Zurich but went back to more technical challenges out of passion for
+software engineering. In my free time, I code in C++ and Rust and follow
+the development progress of the Linux kernel, Mesa, and various
+open-source projects. This ignited a flame to get professionally involved
+in Linux kernel development.
+
+I have tremendous respect for anyone who has proven to be a great Linux
+kernel developer, showing continuous excellence at a technical and
+collaborative level. I consciously applied for the Junior position, as
+this would be my first job working on the Linux kernel itself, marking a
+significant leap from my current Linux user experience. I am eager to face
+all the challenges that will come on this journey and would be proud to
+become a member of the Canonical Kernel team.
+
+In the short to mid-term at Canonical, my goals include successfully
+upstreaming patches for the first time and gaining experience with Linux
+kernel live patching and provide Kernel Livepatch updates to all currently
+supported Linux kernel versions. I am also eager to assist with current
+infrastructure changes to prevent future SRU cycle skips like the one
+happening right now in September. Additionally, I would be thrilled to
+contribute as an operational driving force in Canonical’s recent decision
+to ship more recent Linux kernels in Ubuntu.
+
+My long-term goal at Canonical is to become a RISC-V advocate and
+collaborate with various third parties such as SiFive, Andes Technology,
+DeepComputing, and Framework to provide the best possible Ubuntu
+experience on their hardware. I am deeply committed to FOSS and would find
+great fulfillment in making significant contributions to Linux as part of
+the Canonical team.
+
+I would be more than happy to receive an invitation for an interview from
+you.
+
+Signed-off-by: [Frederic Laing] <laing.frederic@gmail.com>
+
+---
+
+diff --git a/world/best_companies/canonical/kernel_team/developers.h      b/world/best_companies/canonical/kernel_team/developers.h
+index deef9dc..276f450 100644
+--- a/world/best_companies/canonical/kernel_team/developers.h
++++ b/world/best_companies/canonical/kernel_team/developers.h
+@@ -191,7 +191,10 @@ extern enum system_states {
+        SYSTEM_SUSPEND,
+ } system_state;
+
+-
++/*
++ * Values used from Ubuntu Wiki
++ * https://wiki.ubuntu.com/KernelTeam
++ */
+ extern enum kernel_team {
+     APW,
+     PPISATI,
+@@ -203,6 +206,7 @@ extern enum kernel_team {
+     CENGIZCAN,
+     PHILCOX,
+     JOHNCABA,
++    FREDFUNK,
+ } kernel_team;
+
+ /*
+diff --git a/world/people/frederic_laing/job.rs   b/world/people/frederic_laing/job.rs
+index 7fb5f99..be58cf2 100644
+--- a/world/people/frederic_laing/job.rs
++++ b/world/people/frederic_laing/job.rs
+@@ -31,6 +31,7 @@ impl Default for JobHistory {
+     fn default() -> JobHistory {
+         JobHistory {
+             history: LinkedList::from([
++                Job(canonical, JUNIOR_KERNEL_DEVELOPER),
+                 Job(zurich, SENIOR_DEVOPS_ENGINEER),
+                 Job(zurich, IT_PROJECT_MANAGER),
+                 Job(zurich, DEVOPS_ENGINEER),
+
+---
+
+Reply instructions:
+
+You may reply privately to this message via plain-text email and address
+it to: laing.frederic@gmail.com
+
+Be sure your reply has a Subject: header which includes "Invitation to an
+interview".
