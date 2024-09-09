@@ -1,0 +1,2 @@
+# fredfunk.tech
+personal website
